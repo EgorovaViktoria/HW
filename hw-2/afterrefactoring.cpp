@@ -1,22 +1,29 @@
 #include <iostream>
-#include <cmath>
 
 int main()
-{ 
-    int d, m, g;
+{
+    int day, month, year;
     std::cout << "введите дату дня" << std::endl;
-    std::cin >> d;
-    std::cout << "введите число месяца" << std::endl;
-    std::cin >> m;
-    std::cout << "введите год" << std::endl;
-    std::cin >> g;
+    std::cin >> day;
 
-    
-    int y = g % 100;
-    int c = g / 100;
-    int s = (d + ((13 * m - 1) / 5) + (y / 4) + (c / 4) - 2 * c + 777) % 7;
-    
-    switch (s)
+    std::cout << "введите число месяца" << std::endl;
+    std::cin >> month;
+
+    std::cout << "введите год" << std::endl;
+    std::cin >> year;
+
+
+    int century = year / 100;
+    int result = 
+        (day + ((13 * month - 1) / 5)
+        + year
+        + (year / 4) 
+        + (century / 4) 
+        - 2 * century 
+        + 777) 
+        % 7;
+
+    switch (result)
     {
         case 0:
             std::cout << "воскресенье" << std::endl;
@@ -41,6 +48,5 @@ int main()
             break;
     }
 
-    system("pause");
     return 0;
 }
