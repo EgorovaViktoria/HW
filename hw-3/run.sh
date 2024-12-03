@@ -1,3 +1,7 @@
 #!/bin/bash
 
-g++ ./*.cpp -o exe
+g++ ./*.cpp -o shellsort.exe
+
+chmod +x shellsort.exe
+
+./shellsort.exe
