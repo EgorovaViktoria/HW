@@ -1,6 +1,6 @@
 #pragma once
 
 namespace shella {
-    int* generate_3smooth_gaps(int arr_size);
-    void shell_sort(int* arr, const int* const gaps, int arr_size);
+    void generate_3smooth_gaps(int* const nums, const int arr_size);
+    void shell_sort(int* const arr, const int* const gaps, const int arr_size);
 }
