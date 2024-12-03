@@ -13,8 +13,6 @@ int main() {
         std::cout << "Введите размер массива" << std::endl;
         std::cin >> arr_size;
 
-        // Исходный массив
-        // std::vector<int> shell_sorted_array(arr_size, 0);
         int shell_sorted_array[arr_size]; 
 
         std::mt19937 mt(std::chrono::steady_clock::now().time_since_epoch().count()); 
@@ -24,11 +22,16 @@ int main() {
 
 
         auto start = std::chrono::steady_clock::now();
-        int* gaps = shella::generate_3smooth_gaps(arr_size);
-        shella::shell_sort(shell_sorted_array, gaps, arr_size);
+        
+        int* nums = new int[arr_size];
+        shella::generate_3smooth_gaps(nums, arr_size);
+        shella::shell_sort(shell_sorted_array, nums, arr_size);
+        
         auto end = std::chrono::steady_clock::now();
         std::chrono::duration<double> period = end - start;
         std::cout << "Time for shell sort: " << period.count() << std::endl;
+
+        delete[] nums;
     }
     return 1;
 }
