@@ -7,7 +7,6 @@
 const VE::MenuItems VE::ART_ANDREW = {
     "1 - Андрей Иванов сын Рублёв", VE::art_Andrew, &VE::STUDY_ART
 };
-//
 const VE::MenuItems VE::ART_VASILIY = {
     "2 - Василий Дмитриевич Поленов", VE::art_Vasiliy, &VE::STUDY_ART
 };
@@ -19,7 +18,7 @@ const VE::MenuItems VE::ART_IVAN = {
 const VE::MenuItems VE::ART_EXIT = {
     "0 - Выйти в предыдущее меню", VE::art_exit, &VE::STUDY_ART
 };
-//
+
 namespace {
     const VE::MenuItems* const art_children[] = {
         &VE::ART_EXIT,
