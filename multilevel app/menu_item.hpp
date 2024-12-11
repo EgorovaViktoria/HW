@@ -13,10 +13,8 @@ namespace VE {
     extern const MenuItems STUDY_GO_BACK;
 
     extern const MenuItems ART_ANDREW;
-    //
     extern const MenuItems ART_VASILIY;
     extern const MenuItems ART_IVAN;
     extern const MenuItems ART_EXIT;
-    //
 
 }
