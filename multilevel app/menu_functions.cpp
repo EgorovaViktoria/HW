@@ -27,7 +27,7 @@ const VE::MenuItems* VE::study(const MenuItems* current) {
 }
 
 const VE::MenuItems* VE::study_art(const MenuItems* current) {
-    std::cout << "Русские художники" << std::endl;
+    std::cout << current->title << std::endl;
 
     for (int i = 1; i < current->children_count; i++) {
             std::cout << current->children[i]->title << std::endl;
