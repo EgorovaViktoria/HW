@@ -7,6 +7,9 @@
 
 int main () {
     std::setlocale(LC_ALL, "");
+
+    std::cout << "Обучайка приветствует тебя, мой юный ученик!" << std::endl;
+  
   
     const VE::MenuItems* current = &VE::MAIN;
     do {
