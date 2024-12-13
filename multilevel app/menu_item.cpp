@@ -7,6 +7,7 @@
 const VE::MenuItems VE::ART_ANDREW = {
     "1 - Андрей Иванов сын Рублёв", VE::art_Andrew, &VE::STUDY_ART
 };
+
 const VE::MenuItems VE::ART_VASILIY = {
     "2 - Василий Дмитриевич Поленов", VE::art_Vasiliy, &VE::STUDY_ART
 };
@@ -30,7 +31,7 @@ namespace {
 }
 
 const VE::MenuItems VE::STUDY_ART = {
-    "1 - Русские художники", VE::study_art, &VE::STUDY, art_children, art_size
+    "1 - Русские художники", VE::show_menu, &VE::STUDY, art_children, art_size
 };
 
 const VE::MenuItems VE::STUDY_MUSIC = {
