@@ -4,7 +4,6 @@
 #include <iostream>
 
 const VE::MenuItems* VE::show_menu(const MenuItems* current) {
-    std::cout << "Обучайка приветствует тебя, мой юный ученик!" << std::endl;
     for (int i = 1; i < current->children_count; i++) {
             std::cout << current->children[i]->title << std::endl;
     }
